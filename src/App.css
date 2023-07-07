@@ -1,0 +1,28 @@
+.greetings-container {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+  
+}
+
+.text-input-container {
+  display: flex;
+  justify-content: center;
+  min-height: 20vh;
+}
+
+#count-area {
+  width: 350px;
+  height: 250px;
+  border-width: 2px;
+  border-radius: 0.5rem;
+}
+
+.result-container {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+  font-size: 20px;
+}
