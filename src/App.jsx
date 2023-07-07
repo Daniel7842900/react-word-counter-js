@@ -9,7 +9,7 @@ function App() {
     const currentValue = e.target.value;
     setValue(currentValue);
 
-    const words = currentValue.split(" ").filter((word) => word.length !== 0);
+    const words = currentValue.split(/\s+/).filter((word) => word.length !== 0);
 
     setCount(words.length);
   };
