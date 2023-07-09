@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: center;
   min-height: 20vh;
-  
 }
 
 .text-input-container {
@@ -21,8 +20,13 @@
 
 .result-container {
   display:flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 20vh;
   font-size: 20px;
+}
+
+.result-container p{
+  margin: 0.1rem auto;
 }

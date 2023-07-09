@@ -2,16 +2,16 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [value, setValue] = useState("");
-  const [count, setCount] = useState(0);
+  const [characterCount, setCharacterCount] = useState(0);
+  const [wordCount, setWordCount] = useState(0);
 
   const handleCountChange = (e) => {
     const currentValue = e.target.value;
-    setValue(currentValue);
+    setCharacterCount(currentValue.length);
 
     const words = currentValue.split(/\s+/).filter((word) => word.length !== 0);
 
-    setCount(words.length);
+    setWordCount(words.length);
   };
 
   return (
@@ -25,12 +25,13 @@ function App() {
           id="count-area"
           cols="30"
           rows="10"
-          value={value}
           onChange={handleCountChange}
         />
       </div>
       <div className="result-container">
-        <p>Word Count: {count}</p>
+        <p>Word Count: {wordCount}</p>
+        <br />
+        <p>Character Count: {characterCount}</p>
       </div>
     </>
   );
